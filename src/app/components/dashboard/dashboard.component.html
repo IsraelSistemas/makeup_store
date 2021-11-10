@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="openSideNav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Maquillaje App</span>
+
+  <span class="example-spacer"></span>
+
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-drawer-container>
+  <mat-drawer #drawer mode="side" opened="true">
+    <mat-nav-list>
+      <a style="padding-right: 80px;" mat-list-item *ngFor="let menu of sidemenu; let i = index;" [ngClass]="{ 'active-list-item': selectedMenu == menu.name }" (click)="goToMenu(menu);">
+        <h2 matLine>{{ menu.displayName }}</h2>
+				<mat-icon matListIcon>{{ menu.icon }}</mat-icon>
+      </a>
+    </mat-nav-list>
+
+  </mat-drawer>
+
+  <mat-drawer-content>
+
+    <router-outlet></router-outlet>
+
+  </mat-drawer-content>
+
+</mat-drawer-container>
