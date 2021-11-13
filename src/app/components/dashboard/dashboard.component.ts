@@ -26,10 +26,16 @@ export class DashboardComponent implements OnInit {
     redirectTo: '/dashboard/stock'
   }, {
     id: 3,
-    displayName: 'Usuarios',
+    displayName: 'Reportes',
+    name: 'reports',
+    icon: 'description',
+    redirectTo: '/dashboard/reports'
+  }, {
+    id: 4,
+    displayName: 'Administración',
     name: 'users',
-    icon: 'people',
-    redirectTo: '/dashboard/users'
+    icon: 'admin_panel_settings',
+    redirectTo: '/dashboard/admin'
   }];
 
   constructor(
@@ -40,6 +46,10 @@ export class DashboardComponent implements OnInit {
     this.selectedMenu = this.router.url.replace('/dashboard/', '');
 
     if (this.selectedMenu == '/dashboard') this.selectedMenu = 'home';
+  }
+
+  logout() {
+    this.router.navigate(['/login']);
   }
 
   openSideNav() {

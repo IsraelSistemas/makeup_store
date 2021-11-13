@@ -15,7 +15,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSelectModule } from '@angular/material/select';
-
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -32,7 +35,11 @@ import { MatSelectModule } from '@angular/material/select';
     MatSidenavModule,
     MatListModule,
     MatTooltipModule,
-    MatSelectModule
+    MatSelectModule,
+    MatGridListModule,
+    MatCardModule,
+    MatTabsModule,
+    MatMenuModule
   ],
   exports: [
     MatButtonModule,
@@ -45,7 +52,11 @@ import { MatSelectModule } from '@angular/material/select';
     MatSidenavModule,
     MatListModule,
     MatTooltipModule,
-    MatSelectModule
+    MatSelectModule,
+    MatGridListModule,
+    MatCardModule,
+    MatTabsModule,
+    MatMenuModule
   ]
 })
 export class SharedModule { }

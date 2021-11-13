@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { Users } from 'src/app/interfaces/users';
+import { User } from 'src/app/interfaces/users';
 
 @Component({
   selector: 'app-users',
@@ -10,7 +10,7 @@ import { Users } from 'src/app/interfaces/users';
 })
 export class UsersComponent implements OnInit, AfterViewInit {
 
-  users: Users[] = [{
+  users: User[] = [{
     id: 1,
     name: 'fer',
     age: 28,
@@ -41,8 +41,8 @@ export class UsersComponent implements OnInit, AfterViewInit {
     age: 28,
     gender: 'hombre'
   }]
-  displayedColumns: string[] = ['id', 'name', 'age', 'gender'];
-  dataSource = new MatTableDataSource<Users>(this.users);
+  displayedColumns: string[] = ['id', 'name', 'age', 'gender', 'actions'];
+  dataSource = new MatTableDataSource<User>(this.users);
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   constructor() { }
@@ -57,6 +57,14 @@ export class UsersComponent implements OnInit, AfterViewInit {
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+  editUser(user: User) {
+    alert(`editando: ${user.name}`);
+  }
+
+  deleteUser(user: User) {
+    alert(`eliminando: ${user.name}`);
   }
 
 }

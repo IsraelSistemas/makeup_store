@@ -7,6 +7,10 @@ import { SharedModule } from '../shared/shared.module';
 import { NavigationComponent } from './navigation/navigation.component';
 import { UsersComponent } from './users/users.component';
 import { StockComponent } from './stock/stock.component';
+import { VendorsComponent } from './vendors/vendors.component';
+import { ReportsComponent } from './reports/reports.component';
+import { AdministrationComponent } from './administration/administration.component';
+import { GeneralComponent } from './general/general.component';
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { StockComponent } from './stock/stock.component';
     DashboardComponent,
     NavigationComponent,
     UsersComponent,
-    StockComponent
+    StockComponent,
+    VendorsComponent,
+    ReportsComponent,
+    AdministrationComponent,
+    GeneralComponent
   ],
   imports: [
     CommonModule,
