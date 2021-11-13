@@ -59,6 +59,7 @@ export class GeneralComponent implements OnInit {
           position: 'left',
           align: 'center'
         },
+        maintainAspectRatio: false,
         responsive: true
       },
       data: {
@@ -83,6 +84,7 @@ export class GeneralComponent implements OnInit {
           position: 'left',
           align: 'center'
         },
+        maintainAspectRatio: false,
         responsive: true
       },
       data: {
@@ -107,6 +109,7 @@ export class GeneralComponent implements OnInit {
           position: 'left',
           align: 'center'
         },
+        maintainAspectRatio: false,
         responsive: true
       },
       data: {
