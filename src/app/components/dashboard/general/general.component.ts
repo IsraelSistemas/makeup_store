@@ -106,8 +106,7 @@ export class GeneralComponent implements OnInit {
       type: 'bar',
       options: {
         legend: {
-          position: 'left',
-          align: 'center'
+          display: false
         },
         maintainAspectRatio: false,
         responsive: true
@@ -122,10 +121,10 @@ export class GeneralComponent implements OnInit {
           ],
           backgroundColor: [
             "#FF416A", "#36A2EB", "#FFC234",
-            "#FF9F40", "#SDFf22", "#EFED89",
-            "#FETI90", "#FFC234", "#TUKL88",
-            "#FF9F40", "#DFEF22", "#FEFE22"],
-          fill: true
+            "#FF9F40", "#ABCD54", "#EFED89",
+            "#BCBC32", "#FFC234", "#CCFF45",
+            "#FF9F40", "#DFEF22", "#FEFE22"
+          ]
         }],
         labels: [
           'Enero 2021', 'Febrero 2019', 'Marzo 2019',

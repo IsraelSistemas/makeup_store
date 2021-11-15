@@ -4,63 +4,109 @@
 </div> -->
 
 <div class="grid-container">
-  <h1 class="mat-h1">Estadísticas</h1>
+  <h1 class="mat-h1">Estadísticas Generales</h1>
 
-
-  <mat-grid-list cols="4" rowHeight="200px">
+  <mat-grid-list cols="4" rowHeight="150px">
     <mat-grid-tile>
       <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            <div style="display: flex;">
-              <mat-icon style="color: green; font-size: 70px;">paid</mat-icon>
-              <h1>$23.44</h1>
+        <mat-card-content style="height: 100%; margin: 0;">
+          <div style="height: 100%; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <mat-icon style="color: green; font-size: 86px; width: 100%; height: 100%;">paid</mat-icon>
             </div>
-          </mat-card-title>
-        </mat-card-header>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-card class="dashboard-card">
-        <!-- <mat-divider></mat-divider> -->
-        <mat-card-content>
-          <!-- <mat-icon size="large">home</mat-icon> -->
-          <!-- <div style="padding-top: 20px; padding-bottom: 20px; padding-left: 20px;">
-            <canvas width="700" height="230" #bestProductSeller></canvas>
-          </div> -->
+
+            <div style="width: 100%; text-align: center;">
+              <h2 style="margin: 0; font-size: 24px; font-weight: bold;">$14,520.22</h2>
+              <p style="margin: 0;">
+                Total Ventas Mensual
+              </p>
+              <p style="margin: 0; font-size: 12px; font-weight: 300;">
+                <mat-icon style="color: lightgreen; font-weight: bold; font-size: 18px;">arrow_upward</mat-icon>
+                <span>
+                  10% desde el mes pasado
+                </span>
+              </p>
+            </div>
+          </div>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
+
     <mat-grid-tile>
       <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            TOP 5 Productos más vendidos
-          </mat-card-title>
-        </mat-card-header>
-        <mat-divider></mat-divider>
-        <mat-card-content>
-          <!-- <div style="padding-top: 20px; padding-bottom: 20px; padding-left: 20px;">
-            <canvas width="700" height="230" #bestProductSeller></canvas>
-          </div> -->
+        <mat-card-content style="height: 100%; margin: 0;">
+          <div style="height: 100%; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <mat-icon style="color: tomato; font-size: 86px; width: 100%; height: 100%;">shopping_cart</mat-icon>
+            </div>
+
+            <div style="width: 100%; text-align: center;">
+              <h2 style="margin: 0; font-size: 24px; font-weight: bold;">274</h2>
+              <p style="margin: 0;">
+                Productos Vendidos Mensual
+              </p>
+              <p style="margin: 0; font-size: 12px; font-weight: 300;">
+                <mat-icon style="color: red; font-weight: bold; font-size: 18px;">arrow_downward</mat-icon>
+                <span>
+                  8% desde el mes pasado
+                </span>
+              </p>
+            </div>
+          </div>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
+
     <mat-grid-tile>
       <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            TOP 5 Productos más vendidos
-          </mat-card-title>
-        </mat-card-header>
-        <mat-divider></mat-divider>
-        <mat-card-content>
-          <!-- <div style="padding-top: 20px; padding-bottom: 20px; padding-left: 20px;">
-            <canvas width="700" height="230" #bestProductSeller></canvas>
-          </div> -->
+        <mat-card-content style="height: 100%; margin: 0;">
+          <div style="height: 100%; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <mat-icon style="color: saddlebrown; font-size: 86px; width: 100%; height: 100%;">confirmation_number</mat-icon>
+            </div>
+
+            <div style="width: 100%; text-align: center;">
+              <h2 style="margin: 0; font-size: 24px; font-weight: bold;">81</h2>
+              <p style="margin: 0;">
+                Tickets del Mes
+              </p>
+              <p style="margin: 0; font-size: 12px; font-weight: 300;">
+                <mat-icon style="color: green; font-weight: bold; font-size: 18px;">arrow_upward</mat-icon>
+                <span>
+                  2% desde el mes pasado
+                </span>
+              </p>
+            </div>
+          </div>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-card class="dashboard-card">
+        <mat-card-content style="height: 100%; margin: 0;">
+          <div style="height: 100%; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <mat-icon style="color: lightseagreen; font-size: 86px; width: 100%; height: 100%;">people</mat-icon>
+            </div>
+
+            <div style="width: 100%; text-align: center;">
+              <h2 style="margin: 0; font-size: 24px; font-weight: bold;">23</h2>
+              <p style="margin: 0;">
+                Clientes
+              </p>
+              <p style="margin: 0; font-size: 12px; font-weight: 300;">
+                <mat-icon style="color: green; font-weight: bold; font-size: 18px;">arrow_upward</mat-icon>
+                <span>
+                  7% desde el mes pasado
+                </span>
+              </p>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
   </mat-grid-list>
 
   <mat-grid-list cols="2" rowHeight="350px">
@@ -97,7 +143,7 @@
     </mat-grid-tile>
   </mat-grid-list>
 
-  <mat-grid-list cols="1" rowHeight="350px">
+  <mat-grid-list cols="1" rowHeight="450px">
     <mat-grid-tile>
       <mat-card class="dashboard-card">
         <mat-card-header>
@@ -107,8 +153,8 @@
         </mat-card-header>
         <mat-divider></mat-divider>
         <mat-card-content style="height: 100%;">
-          <div class="___testing" style="height: 100%; padding-top: 20px; padding-bottom: 20px; padding-left: 20px;">
-            <canvas width="700" height="150" #anualSells></canvas>
+          <div style="padding-top: 20px; padding-bottom: 20px; padding-left: 20px;">
+            <canvas width="700" height="350" #anualSells></canvas>
           </div>
         </mat-card-content>
       </mat-card>

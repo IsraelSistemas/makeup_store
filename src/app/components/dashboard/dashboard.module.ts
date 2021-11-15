@@ -11,6 +11,7 @@ import { VendorsComponent } from './vendors/vendors.component';
 import { ReportsComponent } from './reports/reports.component';
 import { AdministrationComponent } from './administration/administration.component';
 import { GeneralComponent } from './general/general.component';
+import { ClientsComponent } from './clients/clients.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { GeneralComponent } from './general/general.component';
     VendorsComponent,
     ReportsComponent,
     AdministrationComponent,
-    GeneralComponent
+    GeneralComponent,
+    ClientsComponent
   ],
   imports: [
     CommonModule,
